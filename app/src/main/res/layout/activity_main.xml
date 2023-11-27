@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture_bg"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/teamwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team work all"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:paddingHorizontal="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/convalis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convalis vitae, dictum justo, iaculis id."
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/teamwork"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/cras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cras a ac augue netus egestas semper"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/convalis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/varius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="varius facilisis id."
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/cras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#000"
+        android:layout_marginEnd="140dp"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/varius"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#6D64FE"
+        android:layout_marginStart="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingHorizontal="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/varius"
+        app:layout_constraintStart_toEndOf="@id/signIn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
